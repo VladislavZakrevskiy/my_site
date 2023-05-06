@@ -1,0 +1,75 @@
+
+@mixin typeIcon($link) {
+    width: 30px;
+    height: 30px;
+    background-image: url($link);
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    padding: 18px;
+    cursor: pointer;
+}
+
+@mixin baseIcon($isMenu: false) {
+    @if $isMenu {
+        border: none;
+    }
+    @else {
+        border: 2px solid black;
+    }
+
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.icon {
+    @include baseIcon(false);
+    
+
+    &:hover {
+        background-color: #000000;
+        .telegram, .hhru, .linkedin, .vk {
+            filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(266deg) brightness(113%) contrast(98%);
+        }
+        transition: all 300ms
+    }
+
+    .hhru {
+        @include typeIcon('../assets/headhunter-seeklogo.com.svg');
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: left;
+        width: 40px;
+        height: 25px; 
+        padding: 19px;
+    }
+
+    .telegram {
+        @include typeIcon('../assets/telegram-svgrepo-com.svg')
+    }
+
+    .vk {
+        @include typeIcon('../assets/rus-vk-02-svgrepo-com.svg')
+    }
+
+    .linkedin {
+        @include typeIcon('../assets/linkedin-svgrepo-com.svg')
+    }
+
+}
+
+.burger {
+    @include baseIcon(true);
+    @include typeIcon('../assets/icons8-menu.svg');
+    border-radius: 0%;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}

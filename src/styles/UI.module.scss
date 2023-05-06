@@ -1,0 +1,23 @@
+@import './consts.scss';
+
+.input {
+    overflow: auto;
+    height: auto;
+    resize: none;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    font-family: $fontFamily;
+
+    &:focus {
+        outline: 2px solid #0f0f0f;
+    }
+}
+
+.title {
+    font-family: $fontFamily;
+    word-wrap: break-word;
+    padding: 60px;
+}

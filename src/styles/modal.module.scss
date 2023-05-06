@@ -1,0 +1,27 @@
+@import './consts.scss';
+
+
+
+.modal {
+    @media screen and (min-width: $smallScreen) {
+        width: $modalWidth - 200px;
+        height: $modalHeight - 100px;
+    }
+    @media screen and (min-width: $mediumScreen) {
+        width: $modalWidth - 100px;
+        height: $modalHeight - 50px;
+    }
+    @media screen and (min-width: $bigScreen) {
+        width: calc($modalWidth + ($bigScreen - $mediumScreen) / 2);
+        height: calc($modalHeight + ($bigScreen - $mediumScreen) / 2);
+    }
+    background-color: #000000;
+    position: absolute;
+    top: 55px;
+    right: 85px;
+    border-top-left-radius: $modalRadius;
+    border-bottom-left-radius: $modalRadius;
+    border-bottom-right-radius: $modalRadius;
+    border-top-right-radius: 0px;
+    color: #fff;
+}
