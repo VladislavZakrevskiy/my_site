@@ -6,7 +6,7 @@ const Achivements = () => {
   return (
     <div className={classes.achivements}>
         <div className={classes.achivement}>
-            <span>14</span>
+            <span>17</span>
             <p>months of learning</p>
         </div>
         <div className={classes.achivement}>
