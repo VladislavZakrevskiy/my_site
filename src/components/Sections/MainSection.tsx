@@ -18,15 +18,15 @@ I'm Vlad Zakrevskiy. A Frontend developer from Russia. I love to communicate wit
             />
             <MoreAboutMe />
             <Achivements />
-            <JokeTitle joke="Mar ing" jokeURL="../../../src/assets/Fun/cat.webp" />
+            <JokeTitle joke="Mar ing" jokeURL="/assets/Fun/cat.webp" />
             <Section text="What I Do ...">
                 <MyWork />
             </Section>
-            <JokeTitle joke="Crea vity" jokeURL="../../../src/assets/Fun/tie.webp" />
+            <JokeTitle joke="Crea vity" jokeURL="/assets/Fun/tie.webp" />
             <Section text="Recent Work ...">
                 <Portfolio />
             </Section>
-            <JokeTitle joke="Pro tivity" jokeURL="../../../src/assets/Fun/duck.webp" />
+            <JokeTitle joke="Pro tivity" jokeURL="/assets/Fun/duck.webp" />
             <Section text="Let's Collab ...">
                 <Form padding={120} />
             </Section>

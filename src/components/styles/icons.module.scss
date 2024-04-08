@@ -42,7 +42,7 @@
     }
 
     .hhru {
-        @include typeIcon('../../assets/ContactIcons/headhunter-seeklogo.com.svg');
+        @include typeIcon('/assets/ContactIcons/headhunter-seeklogo.com.svg');
         -webkit-background-size: cover;
         background-size: cover;
         background-position: left;
@@ -52,22 +52,22 @@
     }
 
     .telegram {
-        @include typeIcon('../../assets/ContactIcons/telegram-svgrepo-com.svg')
+        @include typeIcon('/assets/ContactIcons/telegram-svgrepo-com.svg')
     }
 
     .vk {
-        @include typeIcon('../../assets/ContactIcons/rus-vk-02-svgrepo-com.svg')
+        @include typeIcon('/assets/ContactIcons/rus-vk-02-svgrepo-com.svg')
     }
 
     .linkedin {
-        @include typeIcon('../../assets/ContactIcons/linkedin-svgrepo-com.svg')
+        @include typeIcon('/assets/ContactIcons/linkedin-svgrepo-com.svg')
     }
 
 }
 
 .burger {
     @include baseIcon(true);
-    @include typeIcon('../../assets/ContactIcons/icons8-menu.svg');
+    @include typeIcon('/assets/ContactIcons/icons8-menu.svg');
     border-radius: 0%;
     position: absolute;
     top: 20px;

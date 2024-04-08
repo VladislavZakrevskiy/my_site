@@ -8,22 +8,22 @@ const items: {
 }[] = [
     {
         GHLink: 'https://github.com/VladislavZakrevskiy/business-paint',
-        imgSrc: '../../src/assets/ProjectScreens/PaintOnline.png',
+        imgSrc: '/assets/ProjectScreens/PaintOnline.png',
         title: 'Math Paint-Online',
     },
     {
         GHLink: 'https://github.com/VladislavZakrevskiy/windows-xp-LessonNumbers',
-        imgSrc: '../../src/assets/ProjectScreens/WinXP.png',
+        imgSrc: '/assets/ProjectScreens/WinXP.png',
         title: 'Windows XP test',
     },
     {
         GHLink: 'https://github.com/VladislavZakrevskiy/gartic-phone',
-        imgSrc: '../../src/assets/ProjectScreens/GarticPhone.png',
+        imgSrc: '/assets/ProjectScreens/GarticPhone.png',
         title: 'Clone Gartic Phone',
     },
     {
         GHLink: 'https://github.com/VladislavZakrevskiy/next_dnd_master',
-        imgSrc: '../../../src/assets/ProjectScreens/VK.png',
+        imgSrc: '/assets/ProjectScreens/VK.png',
         title: 'Service for making DnD charachter by ChatGPT on NextJS',
     },
 ]
