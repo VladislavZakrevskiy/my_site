@@ -1,14 +1,13 @@
 @import './consts.scss';
 
-@mixin sectionStyle ($left: true) {
+@mixin sectionStyle($left: true) {
     height: 100vh;
     width: $headerWidth;
     position: absolute;
     @if $left {
-        left: 0
-    }
-    @else {
-        right: 0
+        left: 0;
+    } @else {
+        right: 0;
     }
 }
 
@@ -17,8 +16,7 @@
     left: $headerWidth;
     right: $headerWidth;
     width: calc(100vw - 2 * $headerWidth);
-    overflow: hidden
-
+    overflow: hidden;
 }
 
 .header {
@@ -34,7 +32,6 @@
         padding: 10px;
         cursor: pointer;
     }
-
 }
 
 .toolbar {
@@ -90,7 +87,7 @@
         }
 
         &:active {
-            transform: scale(.95);
+            transform: scale(0.95);
             transition: 300ms;
         }
     }
@@ -118,7 +115,6 @@
     padding: 60px;
     text-align: center;
 
-
     .achivement {
         font-family: $fontFamily;
         span {
@@ -130,30 +126,47 @@
     }
 }
 
-.portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    font-family: $fontFamily;   
-    padding: 120px;
+.items {
+    display: flex;
+    font-family: $fontFamily;
+    flex-direction: column;
+    padding-top: 200px;
+    gap: 40px;
 
-    .items {
+    .item {
+        justify-content: start;
         display: flex;
-        flex-direction: column;
-    
-        a {
-            text-decoration: none;
-            font-size: 45px;
-            color: white;
-            text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+        gap:30px;
+
+        img {
+            width: 50%;
+            height: 100%;
+            transition: 300ms;
+            cursor: pointer;
+            border: 4px solid black;
 
             &:hover {
-                color: #000000;
-                text-shadow: none;
-                transition: .3s;
-            } 
+                opacity: 0.7;
+            }
         }
 
+        .text_section {
+            font-size: 26px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            a {
+                text-decoration: underline;
+                font-weight: bold;
+                color: black;
+                transition: 300ms;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
     }
 
     .text {
